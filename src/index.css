@@ -1,9 +1,11 @@
+@import "./Fonts/fonts.css";
+
 .color-body {
   height: 100vh;
   background-color: #f8f8f8;
 }
 .font {
-  font-family: "Almarai", sans-serif;
+  font-family: "Almarai", sans-serif !important;
   font-family: "Cairo", sans-serif;
   font-size: 20px;
 }
@@ -13,7 +15,13 @@
   border-radius: 15px;
   background-color: #ffffff;
   box-shadow: 1px 4px 4px 1px rgba(85, 85, 85, 0.25);
+  overflow: scroll;
 }
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
 
 .dates-count {
   color: #555555;
